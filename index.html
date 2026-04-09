@@ -13,14 +13,14 @@
     <meta property="og:url" content="https://www.drafernandadeola.com.br/">
     <meta property="og:title" content="Dra. Fernanda Deola | Biomédica Esteta em Itajaí/SC">
     <meta property="og:description" content="Realce sua beleza com naturalidade e elegância. Tratamentos estéticos personalizados em Itajaí.">
-    <meta property="og:image" content="https://lookaside.fbsbx.com/lookaside/crawler/instagram/dra_fernandadeola/profile_pic.jpg">
+    <meta property="og:image" content="https://seuusuario.github.io/seu-repositorio/imagens/dra-fernanda.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.drafernandadeola.com.br/">
     <meta property="twitter:title" content="Dra. Fernanda Deola | Biomédica Esteta em Itajaí/SC">
     <meta property="twitter:description" content="Realce sua beleza com naturalidade e elegância. Tratamentos estéticos personalizados em Itajaí.">
-    <meta property="twitter:image" content="https://lookaside.fbsbx.com/lookaside/crawler/instagram/dra_fernandadeola/profile_pic.jpg">
+    <meta property="twitter:image" content="https://seuusuario.github.io/seu-repositorio/imagens/dra-fernanda.jpg">
 
     <title>Dra. Fernanda Deola | Biomédica Esteta em Itajaí/SC</title>
     
@@ -37,17 +37,19 @@
 
     <style>
         :root {
-            --rosa-claro: #F8E8E8;
-            --rosa-medio: #F5D5D5;
-            --rosa-escuro: #E8B4B4;
+            /* Tons de rosa mais claros e visíveis */
+            --rosa-claro: #FFE4E8;
+            --rosa-medio: #FFD1D8;
+            --rosa-escuro: #FFB3C0;
+            --rosa-forte: #FF8FA3;
             --branco: #FFFFFF;
-            --nude: #F5EDE5;
-            --bege: #E8D5C5;
+            --nude: #FFF0F3;
+            --bege: #FFE8EC;
             --dourado: #C9A96E;
             --dourado-claro: #D4B978;
             --texto-principal: #4A4A4A;
             --texto-secundario: #7A7A7A;
-            --sombra: rgba(201, 169, 110, 0.15);
+            --sombra: rgba(255, 179, 192, 0.2);
         }
 
         * {
@@ -120,7 +122,7 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             box-shadow: 0 2px 20px var(--sombra);
             z-index: 1000;
@@ -128,7 +130,7 @@
         }
 
         .navbar.scrolled {
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(255, 179, 192, 0.3);
         }
 
         .nav-container {
@@ -142,6 +144,19 @@
 
         .nav-logo {
             display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-logo-text {
+            display: flex;
             flex-direction: column;
         }
 
@@ -151,6 +166,7 @@
             font-weight: 600;
             color: var(--texto-principal);
             letter-spacing: 1px;
+            line-height: 1.1;
         }
 
         .nav-logo-title {
@@ -192,7 +208,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--dourado);
+            color: var(--rosa-forte);
         }
 
         .nav-cta {
@@ -247,7 +263,7 @@
             max-width: 400px;
             height: 100vh;
             background: var(--branco);
-            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+            box-shadow: -5px 0 30px rgba(255, 179, 192, 0.3);
             z-index: 1001;
             transition: right 0.3s ease;
             padding: 6rem 2rem 2rem;
@@ -277,7 +293,7 @@
         }
 
         .mobile-menu a:hover {
-            color: var(--dourado);
+            color: var(--rosa-forte);
         }
 
         .overlay {
@@ -286,7 +302,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 179, 192, 0.3);
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
@@ -317,7 +333,7 @@
             width: 800px;
             height: 800px;
             background: radial-gradient(circle, var(--rosa-claro) 0%, transparent 70%);
-            opacity: 0.5;
+            opacity: 0.8;
             z-index: 0;
         }
 
@@ -339,7 +355,7 @@
         }
 
         .hero-content h1 span {
-            color: var(--dourado);
+            color: var(--rosa-forte);
             font-style: italic;
         }
 
@@ -363,7 +379,7 @@
             border-radius: 20px;
             font-size: 0.85rem;
             color: var(--dourado);
-            border: 1px solid var(--rosa-medio);
+            border: 2px solid var(--rosa-medio);
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -427,12 +443,12 @@
 
         .btn-outline {
             background: transparent;
-            color: var(--dourado);
-            border: 2px solid var(--dourado);
+            color: var(--rosa-forte);
+            border: 2px solid var(--rosa-forte);
         }
 
         .btn-outline:hover {
-            background: var(--dourado);
+            background: var(--rosa-forte);
             color: var(--branco);
             transform: translateY(-3px);
         }
@@ -451,7 +467,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
             font-weight: 600;
-            color: var(--dourado);
+            color: var(--rosa-forte);
             display: block;
         }
 
@@ -478,6 +494,7 @@
             box-shadow: 0 20px 60px var(--sombra);
             position: relative;
             overflow: hidden;
+            border: 5px solid var(--branco);
         }
 
         .hero-image-placeholder::before {
@@ -501,8 +518,9 @@
             height: 100%;
             object-fit: cover;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            box-shadow: 0 20px 60px rgba(201, 169, 110, 0.3);
+            box-shadow: 0 20px 60px rgba(255, 179, 192, 0.4);
             animation: morphing 8s ease-in-out infinite;
+            border: 5px solid var(--branco);
         }
 
         .about-main-image {
@@ -537,7 +555,7 @@
 
         .section-subtitle {
             display: block;
-            color: var(--dourado);
+            color: var(--rosa-forte);
             font-size: 0.9rem;
             letter-spacing: 3px;
             text-transform: uppercase;
@@ -583,6 +601,7 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 20px 60px var(--sombra);
+            border: 5px solid var(--branco);
         }
 
         .about-image-placeholder i {
@@ -598,7 +617,7 @@
         }
 
         .about-content h2 span {
-            color: var(--dourado);
+            color: var(--rosa-forte);
             font-style: italic;
         }
 
@@ -613,11 +632,11 @@
             padding: 1.5rem;
             border-radius: 15px;
             margin-top: 2rem;
-            border-left: 4px solid var(--dourado);
+            border-left: 4px solid var(--rosa-forte);
         }
 
         .about-credentials strong {
-            color: var(--dourado);
+            color: var(--rosa-forte);
             display: block;
             margin-bottom: 0.5rem;
         }
@@ -642,6 +661,7 @@
             box-shadow: 0 5px 20px var(--sombra);
             position: relative;
             overflow: hidden;
+            border: 2px solid transparent;
         }
 
         .service-card::before {
@@ -651,7 +671,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, var(--dourado) 0%, var(--dourado-claro) 100%);
+            background: linear-gradient(90deg, var(--rosa-forte) 0%, var(--dourado) 100%);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -662,7 +682,8 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(201, 169, 110, 0.2);
+            box-shadow: 0 15px 40px rgba(255, 179, 192, 0.3);
+            border-color: var(--rosa-medio);
         }
 
         .service-icon {
@@ -675,7 +696,8 @@
             align-items: center;
             margin: 0 auto 1.5rem;
             font-size: 2rem;
-            color: var(--dourado);
+            color: var(--rosa-forte);
+            border: 2px solid var(--rosa-medio);
         }
 
         .service-card h3 {
@@ -704,12 +726,13 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--nude);
+            background: linear-gradient(135deg, var(--rosa-claro) 0%, var(--nude) 100%);
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             margin-bottom: 1rem;
             font-weight: 600;
-            color: var(--dourado);
+            color: var(--rosa-forte);
+            border: 2px solid var(--rosa-medio);
         }
 
         .instagram-grid {
@@ -728,10 +751,12 @@
             background: var(--rosa-claro);
             box-shadow: 0 5px 20px var(--sombra);
             transition: transform 0.3s ease;
+            border: 3px solid var(--branco);
         }
 
         .instagram-item:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 179, 192, 0.4);
         }
 
         .instagram-item-placeholder {
@@ -767,7 +792,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(201, 169, 110, 0.8);
+            background: rgba(255, 143, 163, 0.85);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -807,10 +832,12 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px var(--sombra);
             transition: transform 0.3s ease;
+            border: 2px solid var(--rosa-medio);
         }
 
         .differential-item:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 179, 192, 0.3);
         }
 
         .differential-icon {
@@ -857,7 +884,7 @@
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 5px 20px var(--sombra);
-            border: 1px solid var(--rosa-medio);
+            border: 2px solid var(--rosa-medio);
         }
 
         .testimonial-stars {
@@ -883,7 +910,7 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 100%);
+            background: linear-gradient(135deg, var(--rosa-forte) 0%, var(--dourado) 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -917,6 +944,10 @@
             text-align: center;
             padding: 2rem;
             position: relative;
+            background: var(--branco);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px var(--sombra);
+            border: 2px solid var(--rosa-medio);
         }
 
         .step-item:not(:last-child)::after {
@@ -926,8 +957,8 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 2rem;
-            color: var(--dourado);
-            opacity: 0.3;
+            color: var(--rosa-forte);
+            opacity: 0.4;
         }
 
         @media (max-width: 768px) {
@@ -942,7 +973,7 @@
         .step-number {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 100%);
+            background: linear-gradient(135deg, var(--rosa-forte) 0%, var(--dourado) 100%);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -995,9 +1026,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--dourado);
+            color: var(--rosa-forte);
             font-size: 1.2rem;
             flex-shrink: 0;
+            border: 2px solid var(--rosa-medio);
         }
 
         .location-detail-text strong {
@@ -1015,6 +1047,7 @@
             overflow: hidden;
             box-shadow: 0 10px 40px var(--sombra);
             height: 400px;
+            border: 5px solid var(--branco);
         }
 
         .location-map iframe {
@@ -1048,6 +1081,7 @@
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 5px 20px var(--sombra);
+            border: 2px solid var(--rosa-medio);
         }
 
         .contact-phone-label {
@@ -1059,7 +1093,7 @@
         .contact-phone-number {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
-            color: var(--dourado);
+            color: var(--rosa-forte);
             font-weight: 600;
         }
 
@@ -1068,6 +1102,7 @@
             padding: 2.5rem;
             border-radius: 20px;
             box-shadow: 0 10px 40px var(--sombra);
+            border: 2px solid var(--rosa-medio);
         }
 
         .contact-form-title {
@@ -1104,13 +1139,15 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem;
             transition: border-color 0.3s ease;
+            background: var(--branco);
         }
 
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--dourado);
+            border-color: var(--rosa-forte);
+            box-shadow: 0 0 0 3px rgba(255, 179, 192, 0.2);
         }
 
         .form-group textarea {
@@ -1126,7 +1163,7 @@
 
         /* Final CTA Section */
         .final-cta {
-            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 100%);
+            background: linear-gradient(135deg, var(--rosa-forte) 0%, var(--rosa-escuro) 100%);
             color: var(--branco);
             text-align: center;
             padding: 5rem 0;
@@ -1134,7 +1171,7 @@
 
         .final-cta .section-subtitle {
             color: var(--branco);
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .final-cta h2 {
@@ -1174,7 +1211,7 @@
 
         /* Footer */
         .footer {
-            background: var(--texto-principal);
+            background: linear-gradient(135deg, var(--texto-principal) 0%, #2d2d2d 100%);
             color: var(--branco);
             padding: 3rem 0 1rem;
         }
@@ -1201,7 +1238,7 @@
         .footer-social a {
             width: 40px;
             height: 40px;
-            background: var(--dourado);
+            background: var(--rosa-forte);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -1212,11 +1249,12 @@
 
         .footer-social a:hover {
             transform: translateY(-3px);
+            background: var(--dourado);
         }
 
         .footer-column h4 {
             margin-bottom: 1rem;
-            color: var(--dourado);
+            color: var(--rosa-forte);
         }
 
         .footer-column a {
@@ -1230,7 +1268,7 @@
 
         .footer-column a:hover {
             opacity: 1;
-            color: var(--dourado);
+            color: var(--rosa-forte);
         }
 
         .footer-bottom {
@@ -1319,7 +1357,7 @@
             left: 30px;
             width: 50px;
             height: 50px;
-            background: var(--dourado);
+            background: var(--rosa-forte);
             color: var(--branco);
             border: none;
             border-radius: 50%;
@@ -1332,7 +1370,7 @@
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 998;
-            box-shadow: 0 5px 20px rgba(201, 169, 110, 0.4);
+            box-shadow: 0 5px 20px rgba(255, 143, 163, 0.4);
         }
 
         .scroll-top.visible {
@@ -1342,7 +1380,7 @@
 
         .scroll-top:hover {
             transform: translateY(-5px);
-            background: var(--dourado-claro);
+            background: var(--rosa-escuro);
         }
 
         /* Animations */
@@ -1492,10 +1530,14 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="nav-logo-name">Fernanda Deola</span>
-                <span class="nav-logo-title">Biomédica Esteta</span>
-            </div>
+            <a href="#inicio" class="nav-logo">
+                <!-- SUBSTITUA PELO ARQUIVO DA LOGO -->
+                <!-- <img src="imagens/logo.png" alt="Dra. Fernanda Deola Logo" class="nav-logo-img"> -->
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Fernanda Deola</span>
+                    <span class="nav-logo-title">Biomédica Esteta</span>
+                </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -1543,7 +1585,7 @@
                     <h1>Realce sua beleza com <span>naturalidade</span> e <span>elegância</span></h1>
                     <p class="hero-subtitle">Tratamentos estéticos personalizados que respeitam sua essência.</p>
                     <div class="hero-buttons">
-                        <a href="https://wa.me/5547996139556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <a href="https://wa.me/5547961395556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp" target="_blank" rel="noopener">
                             <i class="fab fa-whatsapp"></i> Agendar agora
                         </a>
                         <a href="https://www.instagram.com/dra_fernandadeola/" class="btn btn-outline" target="_blank" rel="noopener">
@@ -1566,7 +1608,7 @@
                     </div>
                 </div>
                 <div class="hero-image fade-in-right">
-                    <img src="https://lookaside.fbsbx.com/lookaside/crawler/instagram/dra_fernandadeola/profile_pic.jpg" 
+                    <img src="imagens/dra-fernanda.jpg" 
                          alt="Dra. Fernanda Deola - Biomédica Esteta em Itajaí" 
                          class="hero-main-image">
                 </div>
@@ -1579,7 +1621,7 @@
         <div class="container">
             <div class="about-container">
                 <div class="about-image fade-in-left">
-                    <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3846154418492650289" 
+                    <img src="imagens/profissional.jpg" 
                          alt="Dra. Fernanda Deola - Biomédica Esteta CRBM 010652" 
                          class="about-main-image">
                 </div>
@@ -1679,7 +1721,7 @@
             <div class="instagram-grid">
                 <!-- Resultado 1 -->
                 <div class="instagram-item scale-in" onclick="window.open('https://www.instagram.com/dra_fernandadeola/p/DVty3mlj97i/', '_blank')">
-                    <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3849956979800792802" 
+                    <img src="imagens/resultado1.jpg" 
                          alt="Resultado de tratamento estético - Harmonização Facial" 
                          class="instagram-grid-image">
                     <div class="instagram-overlay">
@@ -1689,7 +1731,7 @@
 
                 <!-- Resultado 2 -->
                 <div class="instagram-item scale-in" onclick="window.open('https://www.instagram.com/dra_fernandadeola/p/DUqRKDTjTo5/', '_blank')">
-                    <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3830949890566732345" 
+                    <img src="imagens/resultado2.jpg" 
                          alt="Resultado de Botox - Antes e Depois" 
                          class="instagram-grid-image">
                     <div class="instagram-overlay">
@@ -1699,7 +1741,7 @@
 
                 <!-- Resultado 3 -->
                 <div class="instagram-item scale-in" onclick="window.open('https://www.instagram.com/dra_fernandadeola/p/DT2jjBTD1Gt/', '_blank')">
-                    <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3851427552368204981" 
+                    <img src="imagens/resultado3.jpg" 
                          alt="Resultado de preenchimento facial" 
                          class="instagram-grid-image">
                     <div class="instagram-overlay">
@@ -1938,7 +1980,7 @@
                         Estamos aqui para te ajudar a conquistar a melhor versão de si mesma.
                     </p>
                     <div class="contact-buttons">
-                        <a href="https://wa.me/5547996139556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <a href="https://wa.me/5547961395556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp" target="_blank" rel="noopener">
                             <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
                         </a>
                         <a href="https://www.instagram.com/dra_fernandadeola/" class="btn btn-instagram" target="_blank" rel="noopener">
@@ -1997,7 +2039,7 @@
                 Cuidar de você é o investimento mais valioso que existe.
             </p>
             <div class="final-cta-buttons">
-                <a href="https://wa.me/5547996139556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp pulse-animation" target="_blank" rel="noopener">
+                <a href="https://wa.me/5547961395556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="btn btn-whatsapp pulse-animation" target="_blank" rel="noopener">
                     <i class="fab fa-whatsapp"></i> Agendar agora
                 </a>
                 <a href="https://www.instagram.com/dra_fernandadeola/" class="btn btn-instagram" target="_blank" rel="noopener">
@@ -2012,7 +2054,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="nav-logo">
+                    <div class="nav-logo-text">
                         <span class="nav-logo-name">Fernanda Deola</span>
                         <span class="nav-logo-title">Biomédica Esteta</span>
                     </div>
@@ -2024,7 +2066,7 @@
                         <a href="https://www.instagram.com/dra_fernandadeola/" target="_blank" rel="noopener" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://wa.me/5547996139556" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <a href="https://wa.me/5547961395556" target="_blank" rel="noopener" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -2039,7 +2081,7 @@
                 </div>
                 <div class="footer-column">
                     <h4>Contato</h4>
-                    <a href="tel:+5547996139556">(47) 9613-9556</a>
+                    <a href="tel:+5547961395556">(47) 9613-9556</a>
                     <a href="https://www.instagram.com/dra_fernandadeola/" target="_blank" rel="noopener">@dra_fernandadeola</a>
                     <a href="#">Itajaí - SC</a>
                 </div>
@@ -2057,7 +2099,7 @@
             <i class="fab fa-instagram"></i>
             <span class="fixed-btn-tooltip">Ver Instagram</span>
         </a>
-        <a href="https://wa.me/5547996139556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="fixed-btn fixed-btn-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <a href="https://wa.me/5547961395556?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." class="fixed-btn fixed-btn-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
             <span class="fixed-btn-tooltip">Agendar pelo WhatsApp</span>
         </a>
@@ -2214,7 +2256,7 @@
                     whatsappMsg += `*Mensagem:* ${mensagem}%0A`;
                 }
 
-                window.open(`https://wa.me/5547996139556?text=${whatsappMsg}`, '_blank');
+                window.open(`https://wa.me/5547961395556?text=${whatsappMsg}`, '_blank');
                 contactForm.reset();
 
                 const btn = contactForm.querySelector('.form-submit');
@@ -2278,12 +2320,12 @@
             document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(link => {
                 link.style.color = '';
                 if (link.getAttribute('href') === `#${current}`) {
-                    link.style.color = 'var(--dourado)';
+                    link.style.color = 'var(--rosa-forte)';
                 }
             });
         });
 
-        console.log('%c✨ Site Dra. Fernanda Deola carregado com sucesso!', 'color: #C9A96E; font-size: 14px; font-weight: bold;');
+        console.log('%c✨ Site Dra. Fernanda Deola carregado com sucesso!', 'color: #FF8FA3; font-size: 14px; font-weight: bold;');
     </script>
 </body>
 </html>
